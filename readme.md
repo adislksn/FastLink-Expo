@@ -1,6 +1,6 @@
 Fast Link
 ===
-
+&nbsp;
 ## Overview
 Apk View
 <p align="center">
@@ -40,3 +40,12 @@ eas build -p android
 
 ## Apk Link
 [FastLink-Expo](https://github.com/adislksn/FastLink-Expo/blob/main/FastLink-Expo-cfe54480efc2412fbb5e5d1f73bbee78-signed.apk)
+
+## Dependencies
+["expo-status-bar": "~1.4.0"](https://docs.expo.dev/versions/latest/sdk/status-bar/),
+
+["react-native-safe-area-context": "4.3.1"](https://docs.expo.dev/versions/latest/sdk/safe-area-context/),
+
+["react-native-screens": "~3.15.0"](https://docs.expo.dev/versions/latest/sdk/screens/),
+
+["nativewind": "^2.0.11"](https://www.nativewind.dev/quick-starts/expo)

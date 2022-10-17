@@ -1,3 +1,4 @@
+import { StatusBar } from 'react-native';
 import React, {useState} from 'react';
 import {View, Text, TextInput, Linking, TouchableOpacity, KeyboardAvoidingView, ScrollView, Keyboard, Alert} from 'react-native';
 import Card from "../components/Card";
@@ -34,9 +35,10 @@ const Home = () =>{
             },
             { text: "OK", 
                 onPress: () => {
-                let tempLink = [...storingLink];
-                tempLink.splice(index, 1);
-                storingLink=[...tempLink];
+                // let tempLink = [...storingLink];
+                // tempLink.splice(index, 1);
+                // storingLink=tempLink;
+                delete storingLink[index];
             } 
             }
             ]);
@@ -56,7 +58,7 @@ const Home = () =>{
                         <TouchableOpacity className="" key={index} onPress={()=>deleteLink(index)}>
                             <View>
                                 <Text className="text-xl">❌</Text>
-                            </View>
+                            </View> 
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -75,6 +77,7 @@ const Home = () =>{
             </View>
         </TouchableOpacity>
         </KeyboardAvoidingView>
+        <StatusBar style="dark" />
         </View>
     );
 }

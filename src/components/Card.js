@@ -6,7 +6,7 @@ const Card =(props)=>{
         <View>
             <View className="flex-col flex">
                 <Text className="py-2 font-bold text-xl">{props.keys}</Text>
-                <Text className="pt-1 pb-2 overflow-x-hidden break-words">{props.linked}</Text>
+                <Text className="pt-1 pb-2">{props.linked}</Text>
             </View>
         </View>
     );
